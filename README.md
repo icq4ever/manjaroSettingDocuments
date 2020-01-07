@@ -64,8 +64,11 @@ $ sudo chmod+x /usr/bin/launchZeal
 ```
 ### 한글입력기 [Nimf](https://github.com/janghe11/nimf)
 이게 제일 나은듯 
+-> https://github.com/hamonikr/nimf
+-> https://github.com/hamonikr/nimf/wiki/Manjaro-build
 ```
-$ yaourt -s nimf
+$ wget https://github.com/hamonikr/nimf/raw/master/archlinux/nimf-2019.08.14-1-any.pkg.tar.xz
+$ sudo pacman -U nimf-2019.08.14-1-any.pkg.tar.xz
 ```
 
 ### [plank독](https://wiki.archlinux.org/index.php/Plank)
