@@ -10,6 +10,8 @@
 ```
 $ sudo pacman -S rofi
 ```
+- 테마 선택 : `rofi-theme-selector` 로 선택 후 `alt+a`
+
 ### [zeal](https://github.com/zealdocs/zeal)
 오프라인 도큐먼트 문서. dash for mac과 같다. \
 Qt관련 버그가 있는듯. 예전엔 HiDPI 관련 이슈로 아이콘등이 이상하게 크기가 이상하더니, 아에 구동이 안되기도 한다.\
