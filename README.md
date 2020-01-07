@@ -4,7 +4,34 @@
 ## 배포판 선택
 -> [Manjaro XFCE Edition](https://osdn.net/dl/manjaro/manjaro-xfce-17.1.12-stable-x86_64.iso) : lightweight desktop environment(개인적으로 깔끔하다 생각)
 
+## nvidia setting
+### bumblebee
+```
+$ yaourt -s virtualgl #optirun으로 앱 실행시 필요
+$ gpasswd -a <user> bumblebee
+```
+
 ## 유용한 유틸리티
+### AUR
+-> [http://archlinux.fr/yaourt-en/](http://archlinux.fr/yaourt-en/)
+```
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..
+```
+
+### fast install (mine)
+```
+$ sudo pacman zsh vim terminator 
+$ yaourt -s vscode
+$ yaourt -s iosevka-term
+
+```
 ### [rofi](https://github.com/DaveDavenport/rofi)
 스팟라이트/alfred와 같은 간단 런처
 ```
@@ -36,7 +63,7 @@ $ sudo chmod+x /usr/bin/launchZeal
 
 ```
 ### 한글입력기 [Nimf](https://github.com/janghe11/nimf)
-이게 제일 나은듯 \
+이게 제일 나은듯 
 ```
 $ yaourt -s nimf
 ```
@@ -53,4 +80,12 @@ $ sudo pacman -S plank
 $ yaourt -s screenkey
 ```
 
-
+## alias setting
+```
+alias vi="vim"
+alias oF="~/oF"
+alias apps="~/oF/apps"
+alias addons="~/oF/addons"
+alias pg="projectGenerator"
+alias pg.="projectGenerator -tvscode ."
+```
