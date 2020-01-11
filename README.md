@@ -86,6 +86,15 @@ $ sudo chmod+x /usr/bin/launchZeal
 ```
 $ wget https://github.com/hamonikr/nimf/raw/master/archlinux/nimf-2019.08.14-1-any.pkg.tar.xz
 $ sudo pacman -U nimf-2019.08.14-1-any.pkg.tar.xz
+```
+```
+vi ~/.xprofile
+
+export GTK_IM_MODULE=nimf
+export QT4_IM_MODULE="nimf"
+export QT_IM_MODULE=nimf
+export XMODIFIERS="@im=nimf"
+nimf
 
 ```
 
