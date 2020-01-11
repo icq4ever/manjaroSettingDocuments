@@ -76,6 +76,9 @@ $ sudo chmod+x /usr/bin/launchZeal
 // 앞으로 launchZeal로 실행이 가능하다.
 
 ```
+### terminator color setting
+-> [terminator-themes](https://github.com/EliverLara/terminator-themes)
+
 ### 한글입력기 [Nimf](https://github.com/janghe11/nimf)
 이게 제일 나은듯 
 -> https://github.com/hamonikr/nimf
