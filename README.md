@@ -15,14 +15,15 @@ $ gpasswd -a <user> bumblebee
 ### AUR
 -> [http://archlinux.fr/yaourt-en/](http://archlinux.fr/yaourt-en/)
 ```
-git clone https://aur.archlinux.org/package-query.git
-cd package-query
-makepkg -si
-cd ..
+$ sudo pacman -S base-devel
+$ git clone https://aur.archlinux.org/package-query.git
+$ cd package-query
+$ makepkg -si
+$ cd ..
 git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
+$ cd yaourt
+$ makepkg -si
+$ cd ..
 ```
 
 ### fast install (mine)
