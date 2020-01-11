@@ -35,7 +35,6 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 $ sudo pacman zsh vim terminator 
 $ yaourt -s vscode
 $ yaourt -s iosevka-term
-
 ```
 ### [rofi](https://github.com/DaveDavenport/rofi)
 스팟라이트/alfred와 같은 간단 런처
@@ -44,6 +43,15 @@ $ sudo pacman -S rofi
 ```
 - 테마 선택 : `rofi-theme-selector` 로 선택 후 `alt+a`
 - keyboard shortcut command : `rofi -show drun`
+- theme confdig
+```
+$ vi ~/.config/fori/config
+==============
+
+rofi.theme: Monokai
+rofi.font:  Iosevka Term Medium 11
+rofi.modi:  drun
+```
 
 ### [zeal](https://github.com/zealdocs/zeal)
 오프라인 도큐먼트 문서. dash for mac과 같다. \
@@ -75,6 +83,7 @@ $ sudo chmod+x /usr/bin/launchZeal
 ```
 $ wget https://github.com/hamonikr/nimf/raw/master/archlinux/nimf-2019.08.14-1-any.pkg.tar.xz
 $ sudo pacman -U nimf-2019.08.14-1-any.pkg.tar.xz
+
 ```
 
 ### [plank독](https://wiki.archlinux.org/index.php/Plank)
@@ -97,4 +106,26 @@ alias apps="~/oF/apps"
 alias addons="~/oF/addons"
 alias pg="projectGenerator"
 alias pg.="projectGenerator -tvscode ."
+```
+## NVIDIA CUDA setup
+```
+$ yaourt -s cuda
+> select (cuda cudnn) with installed nvidia driver version (opencl-nvidia-XXXxx)
+```
+## OF 0.11.0 setup
+### ALCdevice error
+-> https://forum.openframeworks.cc/t/compilation-failing-due-to-confliting-definition-in-openal/33927/2
+> A fix for this which we should do on our end ( and should work with both old and new releases ) should be:
+```
+$ vi ~/oF/libs/openFrameworks/sound/ofOpenALSoundPlayer.h
+```
+```
+typedef struct ALCdevice_struct ALCdevice;
+/** Opaque context handle */
+typedef struct ALCcontext_struct ALCcontext;
+
+to:
+
+struct ALCdevice;
+struct ALCcontext;
 ```
