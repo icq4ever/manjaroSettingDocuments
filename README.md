@@ -77,7 +77,13 @@ $ sudo chmod+x /usr/bin/launchZeal
 
 ```
 ### terminator color setting
+- pre-requirements
+ ```
+$ sudo pacman -S python2-pip
+$ sudo pip2 install requests
+ ```
 -> [terminator-themes](https://github.com/EliverLara/terminator-themes)
+
 
 ### 한글입력기 [Nimf](https://github.com/janghe11/nimf)
 이게 제일 나은듯 
