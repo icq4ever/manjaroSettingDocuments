@@ -16,16 +16,20 @@ $ gpasswd -a <user> bumblebee
 -> [http://archlinux.fr/yaourt-en/](http://archlinux.fr/yaourt-en/)
 ```
 $ sudo pacman -S base-devel
-$ git clone https://aur.archlinux.org/package-query.git
-$ cd package-query
-$ makepkg -si
-$ cd ..
-git clone https://aur.archlinux.org/yaourt.git
-$ cd yaourt
-$ makepkg -si
-$ cd ..
-```
 
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..
+```
+### oh-my-zsh
+```
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 ### fast install (mine)
 ```
 $ sudo pacman zsh vim terminator 
