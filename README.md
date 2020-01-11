@@ -43,6 +43,7 @@ $ yaourt -s iosevka-term
 $ sudo pacman -S rofi
 ```
 - 테마 선택 : `rofi-theme-selector` 로 선택 후 `alt+a`
+- keyboard shortcut command : `rofi -show drun`
 
 ### [zeal](https://github.com/zealdocs/zeal)
 오프라인 도큐먼트 문서. dash for mac과 같다. \
