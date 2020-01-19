@@ -11,7 +11,7 @@ $ yaourt -s virtualgl #optirun으로 앱 실행시 필요
 $ gpasswd -a <user> bumblebee
 ```
 ## 프린터 세팅
--> [[https://wiki.manjaro.org/index.php?title=Printing](https://wiki.manjaro.org/index.php?title=Printing)
+-> [https://wiki.manjaro.org/index.php?title=Printing](https://wiki.manjaro.org/index.php?title=Printing)
 ### Brother HL-1210W
 #### 드라이버 설치 및 프린터 매니저 설치 (없을경우)
 ```
