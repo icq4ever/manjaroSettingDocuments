@@ -10,6 +10,17 @@
 $ yaourt -s virtualgl #optirun으로 앱 실행시 필요
 $ gpasswd -a <user> bumblebee
 ```
+## 프린터 세팅
+### Brother HL-1210W
+#### 드라이버 설치 및 프린터 매니저 설치 (없을경우)
+```
+$ yaourt -s 1210w
+$ yaourt -s print-manager
+```
+#### 프린터 세팅
+- Device URL : `socket://[PRINTER_IP_ADDRESS:9100]`
+- 드라이버 : 설치한 드라이버 선택
+- 테스트 인쇄 해보기
 
 ## 유용한 유틸리티
 ### AUR
