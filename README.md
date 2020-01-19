@@ -11,13 +11,18 @@ $ yaourt -s virtualgl #optirun으로 앱 실행시 필요
 $ gpasswd -a <user> bumblebee
 ```
 ## 프린터 세팅
+-> [[https://wiki.manjaro.org/index.php?title=Printing](https://wiki.manjaro.org/index.php?title=Printing)
 ### Brother HL-1210W
 #### 드라이버 설치 및 프린터 매니저 설치 (없을경우)
 ```
 $ yaourt -s 1210w
 $ yaourt -s print-manager
 ```
-#### 프린터 세팅
+#### 프린터 추가하기
+- 서비스 등록을 위해 사용자를 sys그룹에 추가
+```
+$ sudo gpasswd -a yourusername sys
+```
 - Device URL : `socket://[PRINTER_IP_ADDRESS:9100]`
 - 드라이버 : 설치한 드라이버 선택
 - 테스트 인쇄 해보기
