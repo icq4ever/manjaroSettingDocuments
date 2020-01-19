@@ -46,11 +46,12 @@ cd ..
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-### fast install (mine)
+### others
 ```
 $ sudo pacman zsh vim terminator 
 $ yaourt -s vscode
 $ yaourt -s iosevka-term
+$ yaourt -s minetime
 ```
 ### [rofi](https://github.com/DaveDavenport/rofi)
 스팟라이트/alfred와 같은 간단 런처
