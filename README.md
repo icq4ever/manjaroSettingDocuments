@@ -164,3 +164,10 @@ to:
 struct ALCdevice;
 struct ALCcontext;
 ```
+## known bug
+### notifyd service not running
+```
+$ systemctl --user start xfce4-notifyd
+$ systemctl --user status xfce4-notifyd
+$ systemctl --user enable xfce4-notifyd
+```
