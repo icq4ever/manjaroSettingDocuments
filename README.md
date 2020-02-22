@@ -49,9 +49,9 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 ### others
 ```
 $ sudo pacman zsh vim terminator 
-$ yaourt -s vscode
-$ yaourt -s iosevka-term
-$ yaourt -s minetime
+$ yaourt -s vscode  #visual studio code
+$ yaourt -s iosevka-term #iosevka ttf font
+$ yaourt -s minetime #google calendar
 ```
 ### [rofi](https://github.com/DaveDavenport/rofi)
 스팟라이트/alfred와 같은 간단 런처
