@@ -62,7 +62,7 @@ $ sudo pacman -S rofi
 - keyboard shortcut command : `rofi -show drun`
 - theme confdig
 ```
-$ vi ~/.config/fori/config
+$ vi ~/.config/rofi/config
 ==============
 
 rofi.theme: Monokai
