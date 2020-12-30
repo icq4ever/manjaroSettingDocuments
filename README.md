@@ -28,7 +28,7 @@ $ sudo gpasswd -a yourusername sys
 - 테스트 인쇄 해보기
 
 ## 유용한 유틸리티
-### AUR
+### AUR (deprecated.. not recommand)
 -> [http://archlinux.fr/yaourt-en/](http://archlinux.fr/yaourt-en/)
 ```
 $ sudo pacman -S base-devel
@@ -42,6 +42,16 @@ cd yaourt
 makepkg -si
 cd ..
 ```
+
+### yay (AUR alternative)
+-> [https://github.com/Jguer/yay](https://github.com/Jguer/yay)
+```
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
 ### oh-my-zsh
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -49,9 +59,9 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 ### others
 ```
 $ sudo pacman zsh vim terminator 
-$ yaourt -s vscode  #visual studio code
-$ yaourt -s iosevka-term #iosevka ttf font
-$ yaourt -s minetime #google calendar
+$ yay -s vscode  #visual studio code
+$ yay -s iosevka-term #iosevka ttf font
+$ yay -s minetime #google calendar
 ```
 ### [rofi](https://github.com/DaveDavenport/rofi)
 스팟라이트/alfred와 같은 간단 런처
@@ -78,7 +88,7 @@ github에서 직접 소스를 받아 빌드하여 실행하고, 쉘 스크립트
 ```
 $ git clone https://github.com/zealdocs/zeal
 $ cd zeal
-$ mk build && cd build
+$ mkdir build && cd build
 $ cmake ..
 $ make && sudo make install
 
@@ -130,7 +140,7 @@ $ sudo pacman -S plank
 ### [screenkey](https://github.com/wavexx/screenkey)
 눌리고 있는 키보드를 화면에 보여줌
 ```
-$ yaourt -s screenkey
+$ yay -s screenkey
 ```
 
 ## alias setting
