@@ -51,6 +51,23 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
+### 마우스 휠클릭 붙여넣기 끄기
+-> [stackExchange.com](https://unix.stackexchange.com/questions/24330/how-can-i-turn-off-middle-mouse-button-paste-functionality-in-all-programs)
+
+```
+$ pacman -S xbindkeys xsel xdotool
+```
+
+```
+$ vi ~/.xbindkeysrc
+---
+"echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
+b:2 + Release
+---
+```
+then reload `xbindkeys -p`\
+run `xbindkeys` on startup, `pkill xbindkeys` to stop
+
 
 ### oh-my-zsh
 ```
