@@ -79,6 +79,7 @@ $ sudo pacman zsh vim terminator
 $ yay -s vscode  #visual studio code
 $ yay -s iosevka-term #iosevka ttf font
 $ yay -s minetime #google calendar
+$ yay -s ncspot # spotify on terminal
 ```
 ### [rofi](https://github.com/DaveDavenport/rofi)
 스팟라이트/alfred와 같은 간단 런처
