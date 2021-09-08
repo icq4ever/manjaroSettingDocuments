@@ -88,14 +88,36 @@ $ sudo pacman -S rofi
 ```
 - 테마 선택 : `rofi-theme-selector` 로 선택 후 `alt+a`
 - keyboard shortcut command : `rofi -show drun`
-- theme confdig
+- theme config
 ```
+
+**구버전 세팅**
 $ vi ~/.config/rofi/config
 ==============
 
 rofi.theme: Monokai
 rofi.font:  Iosevka Term Medium 11
 rofi.modi:  drun
+```
+
+**2020/01/02 릴리즈 이후로 설정파일 포맷이 변경됨.**
+참고 : [https://github.com/davatorium/rofi/wiki/Configuring-Rofi](https://github.com/davatorium/rofi/wiki/Configuring-Rofi)
+
+아래 명령으로 새 설정파일로 변환후 설정파일을 수정한다.
+```
+$ rofi -upgrade-config
+```
+새 설정파일
+```
+$ vi ~/.config/rofi/config.rasi
+==============
+configuration {
+  font: "Iosevka Term Medium 11";
+  modi: "drun";
+  }
+  
+@theme "/usr/share/rofi/themes/Monokai.rasi"
+~                                                     
 ```
 
 ### [zeal](https://github.com/zealdocs/zeal)
