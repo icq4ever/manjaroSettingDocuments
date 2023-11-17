@@ -152,24 +152,19 @@ $ sudo pip2 install requests
 -> [terminator-themes](https://github.com/EliverLara/terminator-themes)
 
 
-### 한글입력기 [Nimf](https://github.com/janghe11/nimf)
-이게 제일 나은듯 
--> https://github.com/hamonikr/nimf
--> https://github.com/hamonikr/nimf/wiki/Manjaro-build
+### 한글입력기 fcitx
+Nimf는 더이상 설치도 안되고, telegram에서 입력이 안되므로 fcitx로 갈아탐 
 ```
-$ wget https://github.com/hamonikr/nimf/raw/master/archlinux/nimf-2019.08.14-1-any.pkg.tar.xz
-$ sudo pacman -U nimf-2019.08.14-1-any.pkg.tar.xz
+$ sudo pacman -S fcitx5 fcitx5-hangul fcitx5-gtk fcitx5-qt fcitx5-configtool 
 ```
 ```
 vi ~/.xprofile
 
-export GTK_IM_MODULE=nimf
-export QT4_IM_MODULE="nimf"
-export QT_IM_MODULE=nimf
-export XMODIFIERS="@im=nimf"
-nimf
-
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
 ```
+이후 재부팅한 뒤, fcitx configuration에서 한글 선택, 단축키 설정.
 
 ### [plank독](https://wiki.archlinux.org/index.php/Plank)
 깔끔한 독.
